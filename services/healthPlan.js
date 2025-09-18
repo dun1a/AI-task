@@ -1,13 +1,13 @@
 const model = require("./gemini");
 
-const generateHealthPlan = async (age, gender, healthGoal, dietPreference, workoutDays) => {
+const generateHealthPlan = async (title, author, rating) => {
   const prompt = `
 You are a certified health and fitness consultant. Based on the user's details, create a **personalized health improvement plan** in **JSON format**.
 
 ### Schema Requirements:
 {
-  "health_plan": {
-    "age": "number",
+  "book recs": {
+    "title": "number",
     "gender": "string",
     "goal": "string",
     "diet_preference": "string",
